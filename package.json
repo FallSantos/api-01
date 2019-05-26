@@ -1,0 +1,29 @@
+{
+  "name": "api-01",
+  "version": "1.0.0",
+  "description": "Simple API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FallSantos/api-01.git"
+  },
+  "keywords": [
+    "API",
+    "tests"
+  ],
+  "author": "Flávio Santos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FallSantos/api-01/issues"
+  },
+  "homepage": "https://github.com/FallSantos/api-01#readme",
+  "dependencies": {
+    "express": "^4.17.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
