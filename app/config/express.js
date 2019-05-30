@@ -1,6 +1,10 @@
+require('dotenv').config()
+
 const express = require('express')
 
 const app = express()
+
+require('./db')()
 
 const docs = require('../routes/docs')
 
@@ -13,6 +17,11 @@ app.get('/', (req, res, next) => {
 
 app.use('/docs', docs)
 
-app.set('port', 4004)
+app.set('port', process.env.PORT)
 
-module.exports = app
+const config = []
+
+config.express = express
+config.app = app
+
+module.exports = config
